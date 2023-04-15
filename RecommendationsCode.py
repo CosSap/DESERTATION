@@ -168,8 +168,6 @@ if __name__ == '__main__':
     results = content_based_algorithm(game_title='FIFA 16', platform='PS4', num_recommendations=10)
     print(results)
 
-    print("malakas")
-
     # TODO: Inside our results we don't want duplicated games. Create a filter which removes the games that are duplicated.
     # TODO: The record that the user searches with has to be removed from the dataset
     # TODO: Transfer the chatGPT2.py file and all the necessary files into GitHub for extra security
