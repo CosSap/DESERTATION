@@ -139,7 +139,6 @@ def recommend_games(
     #         else:
     #             games_df = games_df.games_df_filtered(['i','y'])
 
-
     # Return the recommended games
     return games_df.iloc[game_indices][['Name', 'Platform']]
 
@@ -148,7 +147,7 @@ def validation(all_games, game_title, platform):
     df_validation = all_games
 
     if game_title not in df_validation['Name'].values and platform not in df_validation['Platform'].values:
-        raise ValueError("The game " + game_title + " and platform "+ platform + " do not exist in the database.")
+        raise ValueError("The game " + game_title + " and platform " + platform + " do not exist in the database.")
 
     elif game_title not in df_validation['Name'].values:
         raise ValueError("The game " + game_title + " does not exist in the database.")
@@ -157,7 +156,7 @@ def validation(all_games, game_title, platform):
         raise ValueError("The platform " + platform + " does not exist in the database")
 
     else:
-        print("The game " + game_title + " and platform "+ platform + " exist!")
+        print("The game " + game_title + " and platform " + platform + " exist!")
         return
 
 
@@ -168,13 +167,19 @@ if __name__ == '__main__':
     results = content_based_algorithm(game_title='FIFA 16', platform='PS4', num_recommendations=10)
     print(results)
 
-    # TODO: Inside our results we don't want duplicated games. Create a filter which removes the games that are duplicated.
+    # TODO: Inside our results we don't want duplicated games.
+    #  Create a filter which removes the games that are duplicated.
     # TODO: The record that the user searches with has to be removed from the dataset
-    # TODO: Transfer the chatGPT2.py file and all the necessary files into GitHub for extra security
-    # TODO: Learn how to commit in pycharm and how to push and pull
-    # TODO: Create new Pycharm Project and name it "Desertation" in Desktop
-    # TODO: Name the files inside the desertation project with a meaningfull name
-    # TODO: Make sure that my the desertation project runs normaly
-    # TODO: Remove all other projects except "Desertation"
-    # TODO: Connect my desertation project to GitHub
-    # TODO: Once i connect with GitHub commit a change and push it on GitHub and make sure its visible there
+
+    # TODO: Download sql, build a temporary table connect the back-end with the database using quiries
+    # TODO: Search how to run my back-end in 8080 and learn how to connect mySQL with Python
+    # TODO: Make a simple quirey
+
+    # 18/04
+    # TODO: delete all unnecessary todos
+    # TODO: Rename the files, make the names short and self-explanatory
+    # TODO: What is the 8080 Port
+    # TODO: Create a new file named "functions"
+    # TODO: Inside functions file create a query to fetch the data in table " test"
+    # TODO: Import the video game dataset in a new table named "video_games"
+    # TODO: Make a query in table video_games to fetch all the games
