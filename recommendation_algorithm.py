@@ -176,10 +176,14 @@ if __name__ == '__main__':
     # TODO: Make a simple quirey
 
     # 18/04
-    # TODO: delete all unnecessary todos
-    # TODO: Rename the files, make the names short and self-explanatory
-    # TODO: What is the 8080 Port
-    # TODO: Create a new file named "functions"
-    # TODO: Inside functions file create a query to fetch the data in table " test"
     # TODO: Import the video game dataset in a new table named "video_games"
     # TODO: Make a query in table video_games to fetch all the games
+
+    # 19/04
+    # TODO: Create a new Get request inside the APIs file that returns all the games
+    # TODO: Test it in PostMan
+    # TODO: Start building Front-End
+
+    # TODO: Create table called "Games" and add all the necesarry collumns with all the necesarry types
+    # TODO: Insert from mySQL workbench a row in that table (For testing)
+    # TODO: insert the dataset into the table "Games"
